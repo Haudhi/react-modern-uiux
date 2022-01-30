@@ -1,0 +1,58 @@
+.posibi-image img {
+  width: 25em;
+  margin-left: 7vw;
+}
+
+.posibi {
+  padding: 5vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.posibi-details {
+  margin-top: 8vw;
+  margin-right: 2vw;
+}
+
+.posibi-details h1 {
+  background: linear-gradient(169deg, rgba(244, 0, 255, 1) 5%, rgba(255, 153, 0, 1) 78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.req {
+  color: #7ed6df;
+}
+
+.posibi-details p {
+  margin: 3vw 0vw;
+  width: 30em;
+  line-height: 1.5;
+  color: #686de0;
+}
+
+.posibi-details h4 {
+  margin-bottom: 3vw;
+}
+
+.or {
+  color: orange;
+}
+
+@media screen and (max-width: 960px) {
+  .posibi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posibi-details p {
+    width: 80vw;
+  }
+
+  .posibi-image img {
+    width: 60vw;
+  }
+}

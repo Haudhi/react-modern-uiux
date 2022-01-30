@@ -1,0 +1,57 @@
+.cta {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw;
+  margin: 3vw;
+  width: 80vw;
+  background: linear-gradient(169deg, rgba(244, 0, 255, 1) 5%, rgba(255, 153, 0, 1) 78%);
+  border-radius: 5px;
+}
+
+#Cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+}
+
+.btn-cta button {
+  color: white;
+  background-color: black;
+  font-size: 1.5em;
+  padding: 1vw;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.btn-cta:active {
+  transform: translateY(5px);
+}
+
+.btn-cta button:hover {
+  background-color: grey;
+}
+
+.cta-one {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.cta-one p {
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 960px) {
+  .cta-one {
+    font-size: 0.7em;
+  }
+
+  .btn-cta {
+    font-size: 0.5em;
+  }
+}

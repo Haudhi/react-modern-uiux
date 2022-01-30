@@ -1,0 +1,96 @@
+.article {
+  color: white;
+  padding: 5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.article h1 {
+  margin-bottom: 7vw;
+  font-size: 3em;
+  background: linear-gradient(169deg, rgba(244, 0, 255, 1) 5%, rgba(255, 153, 0, 1) 78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-one img {
+  width: 100%;
+}
+
+.article-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog {
+  background-color: #031b34;
+  margin: 2vw;
+  transition: all 0.3s ease;
+}
+
+.blog:hover {
+  transform: scale(1.07);
+}
+
+.blog p {
+  margin: 3vw 2vw 1vw 2vw;
+  padding-bottom: 2vw;
+}
+
+.blog h3 {
+  font-size: 1em;
+  padding-left: 1vw;
+  line-height: 1.5;
+}
+
+.blog-one {
+  background-color: #031b34;
+  margin: 2vw;
+  transition: all 0.3s ease;
+}
+
+.blog-one:hover {
+  transform: scale(1.07);
+}
+
+.blog-one h3 {
+  font-size: 1em;
+  padding-left: 1vw;
+}
+
+.blog-one p {
+  margin: 3vw 2vw 1vw 2vw;
+  padding-bottom: 2vw;
+}
+
+.read-one {
+  padding-top: 20vw;
+}
+
+.read-one:hover {
+  color: rgb(49, 130, 236);
+}
+
+.read {
+  cursor: pointer;
+}
+
+.read:hover {
+  color: rgb(49, 130, 236);
+}
+
+@media screen and (max-width: 960px) {
+  .article-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article h1 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,164 @@
+.links {
+  display: flex;
+  margin-left: 15vw;
+}
+
+.links a:hover {
+  border-bottom: 4px solid white;
+  transform: scale(1.05);
+}
+
+.links p:hover {
+  transform: scale(1.1);
+}
+
+.links p {
+  margin-right: 3vw;
+  transition: all 0.3s ease;
+}
+
+.links a {
+  color: white;
+  font-family: sans-serif;
+  padding-bottom: 1vw;
+  transition: all 0.3s ease;
+}
+
+.sign {
+  display: flex;
+  color: white;
+  font-family: monospace;
+  margin-right: 8vw;
+}
+
+.sign p {
+  margin-right: 2vw;
+  font-size: 1.2em;
+  padding-top: 0.6vw;
+  cursor: pointer;
+}
+
+.sign p:hover {
+  color: rgb(58, 45, 243);
+}
+
+.btn-sign {
+  padding: 0.5vw 2vw;
+  font-size: 1.1em;
+  color: black;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-sign:hover {
+  background-color: rgb(197, 133, 15);
+  color: white;
+}
+
+.btn-sign:active {
+  transform: translateY(5px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-active {
+  background-color: #031b34;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw;
+  position: fixed;
+  width: 100%;
+}
+
+.toggle {
+  position: relative;
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 14vw;
+  right: 0;
+  margin-right: 8vw;
+  width: 40vw;
+  background-color: rgb(52, 50, 70);
+  padding: 3vw;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.menu-links p {
+  margin-bottom: 3vw;
+}
+
+.menu-links a {
+  color: white;
+}
+
+.menu-sign p {
+  color: white;
+  margin: 4vw;
+  font-size: 1.2em;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .links {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    margin-left: 50vw;
+  }
+
+  .navbar {
+    width: auto;
+  }
+
+  .navbar-active {
+    width: auto;
+  }
+}
